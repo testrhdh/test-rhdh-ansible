@@ -1,0 +1,20 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ansible-test.test-rhdh-ansible
+  description: test collection 
+  tags:
+    - ansible
+    - collection
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: testrhdh/test-rhdh-ansible
+  links:
+    - url: https://devspaces.apps.ansible-rhdh.testing.ansible.com/#https://github.com/testrhdh/test-rhdh-ansible
+      title: Open Ansible project in OpenShift Dev Spaces
+      icon: web
+spec:
+  type: collection-project
+  lifecycle: production
+  owner: testrhdh
